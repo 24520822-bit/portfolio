@@ -3,52 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'self';"
+    />
     <title>Nguyễn Khoa - Portfolio</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="top">
+    <header class="top">
       <h1>Nguyễn Khoa</h1>
       <button
         id="menuButton"
-        onclick="toggleMenu()"
         aria-expanded="false"
         aria-controls="menu"
+        aria-label="Mở menu điều hướng"
       >
         Menu
       </button>
-      <div id="menu" class="menu hidden">
+      <nav id="menu" class="menu hidden" aria-label="Menu điều hướng">
         <a href="#about">Giới thiệu</a>
         <a href="#projects">Dự án</a>
         <a href="#contact">Liên hệ</a>
-      </div>
-    </div>
+      </nav>
+    </header>
 
-    <div class="content">
-      <div id="about">
+    <main class="content">
+      <section id="about">
         <h2>Giới thiệu</h2>
         <p>Viết 2-3 câu về bạn ở đây.</p>
-      </div>
+      </section>
 
-      <div id="projects">
+      <section id="projects">
         <h2>Dự án</h2>
-        <div class="card">
+        <article class="card">
           <h3>Tên dự án 1</h3>
           <p>Mô tả ngắn dự án.</p>
-        </div>
-        <div class="card">
+        </article>
+        <article class="card">
           <h3>Tên dự án 2</h3>
           <p>Mô tả ngắn dự án.</p>
-        </div>
-      </div>
+        </article>
+      </section>
 
-      <div id="contact">
+      <section id="contact">
         <h2>Liên hệ</h2>
         <p>Email: 24520822@gm.uit.edu.vn</p>
-      </div>
-    </div>
+      </section>
+    </main>
 
-    <div class="bottom">© 2026 Nguyễn Khoa</div>
+    <footer class="bottom">© 2026 Nguyễn Khoa</footer>
 
     <script src="script.js"></script>
   </body>
