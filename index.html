@@ -9,7 +9,14 @@
   <body>
     <div class="top">
       <h1>Nguyễn Khoa</h1>
-      <button onclick="toggleMenu()">Menu</button>
+      <button
+        id="menuButton"
+        onclick="toggleMenu()"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        Menu
+      </button>
       <div id="menu" class="menu hidden">
         <a href="#about">Giới thiệu</a>
         <a href="#projects">Dự án</a>
