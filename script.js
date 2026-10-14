@@ -11,8 +11,11 @@ function toggleMenu() {
   setMenuState(!isOpen);
 }
 
+menuButton.addEventListener("click", toggleMenu);
+
 document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") {
+  if (event.key === "Escape" && !menu.classList.contains("hidden")) {
     setMenuState(false);
+    menuButton.focus();
   }
 });
