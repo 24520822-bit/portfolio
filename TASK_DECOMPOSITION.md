@@ -5,7 +5,7 @@
 - Mục tiêu: trang đạt chuẩn tương phản màu và có landmark đúng
 - Việc làm: chạy axe/Lighthouse Accessibility, sửa contrast, thêm header/nav/main/footer
 - Hoàn thành khi: axe không còn lỗi mức AA
-- Commit: fix(a11y): contrast & landmarks
+- Commit: fix|a11y: contrast & landmarks
 
 ## M2: Focus trap audit
 
